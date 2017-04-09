@@ -4,10 +4,22 @@ import java.util.Calendar;
 
 public abstract class User {
 
-	public String name;
-	public String password;
-	Calendar startDate;
+	//Attributes
+	private int idUser;
+	private String name;
+	private String password;
+	private Calendar startDate;
 	
+	
+	//Getters & Setters
+	public int getIdUser(){
+		return idUser;
+	}
+	
+	public void setIdUser(int idUser){
+		this.idUser = idUser;
+	}
+			
 	public String getName() {
 		return name;
 	}
