@@ -7,6 +7,9 @@ public class Driver  extends User{
 	//Attributes
 	private Calendar licenseExpirationDate;
 	
+	public Driver(){
+		super();
+	}
 	//Getters & Setters
 	public Calendar getLicenseExpirationDate() {
 		return licenseExpirationDate;

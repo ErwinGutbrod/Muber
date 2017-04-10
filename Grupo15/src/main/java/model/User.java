@@ -11,6 +11,10 @@ public abstract class User {
 	private Calendar startDate;
 	
 	
+	public User() {
+		super();
+	}
+
 	//Getters & Setters
 	public int getIdUser(){
 		return idUser;

@@ -22,6 +22,8 @@
 
 		<!-- Incluir mappings aquí -->
 		<mapping resource="main/java/hibernate/User.hbm.xml" /> 
+		<mapping resource="main/java/hibernate/Travel.hbm.xml" />
+		<mapping resource="main/java/hibernate/Review.hbm.xml" />
 
 	</session-factory>
 </hibernate-configuration>

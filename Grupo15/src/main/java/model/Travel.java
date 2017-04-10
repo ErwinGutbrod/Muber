@@ -1,6 +1,8 @@
 package main.java.model;
 
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 public class Travel {
 
@@ -10,8 +12,28 @@ public class Travel {
 	int passengerCount;
 	long totalAmount;
 	boolean isFinalised = false;
-	int idUserDriver;
+	int idDriver;
+	int idTravel;
+	List<Integer> idUsers = new ArrayList<Integer>();
 	
+	public Travel(){
+		super();
+	}
+	
+	public List<Integer> getIdUsers() {
+		return idUsers;
+	}
+
+	public void setIdUsers(List<Integer> idUsers) {
+		this.idUsers = idUsers;
+	}
+
+	public int getIdTravel() {
+		return idTravel;
+	}
+	public void setIdTravel(int idTravel) {
+		this.idTravel = idTravel;
+	}
 	public int getOrigin() {
 		return origin;
 	}
@@ -42,17 +64,17 @@ public class Travel {
 	public void setTotalAmount(long totalAmount) {
 		this.totalAmount = totalAmount;
 	}
-	public boolean isFinalised() {
+	public boolean getIsFinalised() {
 		return isFinalised;
 	}
-	public void setFinalised(boolean isFinalised) {
+	public void setIsFinalised(boolean isFinalised) {
 		this.isFinalised = isFinalised;
 	}
-	public int getIdUserDriver() {
-		return idUserDriver;
+	public int getIdDriver() {
+		return idDriver;
 	}
-	public void setIdUserDriver(int idUserDriver) {
-		this.idUserDriver = idUserDriver;
+	public void setIdDriver(int idDriver) {
+		this.idDriver = idDriver;
 	}
 	
 	

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping package="main.java.model">
+<class name="Review" table="REVIEW">						
+	<id name="idReview" type="int" column="ID_REVIEW">
+		<generator class="native"/>
+	</id>
+	<property name="rate" type="int" column="RATE"/>
+	<property name="review" type="string" column="REVIEW"/>
+
+	<one-to-one name="idPassenger"  
+       class="main.java.model.Passenger"/>
+    <one-to-one name="idTravel"  
+       class="Travel"/>
+</class>
+</hibernate-mapping>
