@@ -6,26 +6,31 @@ import java.util.List;
 
 public class Travel {
 
-	int origin;
-	int destination;
-	Calendar date;
-	int passengerCount;
-	long totalAmount;
-	boolean isFinalised = false;
-	int idDriver;
-	int idTravel;
-	List<Integer> idUsers = new ArrayList<Integer>();
+	//Attributes
+	private int origin;
+	private int destination;
+	private Calendar date;
+	private int passengerCount;
+	private long totalAmount;
+	private boolean isFinalised = false;
+	private int idDriver;
+	private int idTravel;
+	private List<Integer> passengers = new ArrayList<Integer>();
 	
+	//Constructors
 	public Travel(){
 		super();
 	}
 	
-	public List<Integer> getIdUsers() {
-		return idUsers;
+	
+	//Getters & Setters
+	
+	public List<Integer> getPassengers() {
+		return passengers;
 	}
 
-	public void setIdUsers(List<Integer> idUsers) {
-		this.idUsers = idUsers;
+	public void setPassengers(List<Integer> passengers) {
+		this.passengers = passengers;
 	}
 
 	public int getIdTravel() {

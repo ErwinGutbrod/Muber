@@ -10,7 +10,7 @@ public abstract class User {
 	private String password;
 	private Calendar startDate;
 	
-	
+	//Constructors
 	public User() {
 		super();
 	}

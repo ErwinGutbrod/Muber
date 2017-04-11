@@ -7,6 +7,7 @@ public class Driver  extends User{
 	//Attributes
 	private Calendar licenseExpirationDate;
 	
+	//Constructor
 	public Driver(){
 		super();
 	}

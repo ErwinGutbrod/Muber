@@ -2,16 +2,19 @@ package main.java.model;
 
 public class Review {
 
-	int rate;
-	int idPassenger;
-	String review;
-	int idTravel;
-	int idReview;
+	//Attributes
+	private int idReview;
+	private int rate;
+	private int idPassenger;
+	private String review;
+	private int idTravel;
 	
+	//Constructor
 	public Review() {
 		super();
 	}
 
+	//Getters & Setters
 	public int getRate() {
 		return rate;
 	}

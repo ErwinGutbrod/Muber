@@ -5,15 +5,15 @@
 
 <hibernate-mapping package="main.java.model">
 <class name="Review" table="REVIEW">						
-	<id name="idReview" type="int" column="ID_REVIEW">
-		<generator class="native"/>
+	<id name="idReview"  column="ID_REVIEW">
+		<generator class="increment"/>
 	</id>
-	<property name="rate" type="int" column="RATE"/>
-	<property name="review" type="string" column="REVIEW"/>
+	
+	<property name="rate"  column="RATE"/>
+	<property name="review"  column="REVIEW"/>
+	
+	<many-to-one name="idPassenger" class="Passenger" column="ID_USER"  not-null="true" cascade="all" />
+	<many-to-one name="idTravel" class="Travel" column="ID_TRAVEL"  not-null="true" cascade="all" />
 
-	<one-to-one name="idPassenger"  
-       class="main.java.model.Passenger"/>
-    <one-to-one name="idTravel"  
-       class="Travel"/>
 </class>
 </hibernate-mapping>
