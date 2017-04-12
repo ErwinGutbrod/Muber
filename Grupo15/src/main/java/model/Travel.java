@@ -1,21 +1,20 @@
 package main.java.model;
 
-import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.List;
+import java.util.Set;
 
 public class Travel {
 
 	//Attributes
-	private int origin;
-	private int destination;
+	private String origin;
+	private String destination;
 	private Calendar date;
 	private int passengerCount;
 	private long totalAmount;
 	private boolean isFinalised = false;
-	private int idDriver;
+	private Driver driver;
 	private int idTravel;
-	private List<Integer> passengers = new ArrayList<Integer>();
+	private Set<Passenger> passengers;
 	
 	//Constructors
 	public Travel(){
@@ -25,11 +24,11 @@ public class Travel {
 	
 	//Getters & Setters
 	
-	public List<Integer> getPassengers() {
+	public Set<Passenger> getPassengers() {
 		return passengers;
 	}
 
-	public void setPassengers(List<Integer> passengers) {
+	public void setPassengers(Set<Passenger> passengers) {
 		this.passengers = passengers;
 	}
 
@@ -39,16 +38,16 @@ public class Travel {
 	public void setIdTravel(int idTravel) {
 		this.idTravel = idTravel;
 	}
-	public int getOrigin() {
+	public String getOrigin() {
 		return origin;
 	}
-	public void setOrigin(int origin) {
+	public void setOrigin(String origin) {
 		this.origin = origin;
 	}
-	public int getDestination() {
+	public String getDestination() {
 		return destination;
 	}
-	public void setDestination(int destination) {
+	public void setDestination(String destination) {
 		this.destination = destination;
 	}
 	public Calendar getDate() {
@@ -75,11 +74,11 @@ public class Travel {
 	public void setIsFinalised(boolean isFinalised) {
 		this.isFinalised = isFinalised;
 	}
-	public int getIdDriver() {
-		return idDriver;
+	public Driver getDriver() {
+		return driver;
 	}
-	public void setIdDriver(int idDriver) {
-		this.idDriver = idDriver;
+	public void setDriver(Driver driver) {
+		this.driver = driver;
 	}
 	
 	

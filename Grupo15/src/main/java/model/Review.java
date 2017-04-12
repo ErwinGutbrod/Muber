@@ -5,9 +5,9 @@ public class Review {
 	//Attributes
 	private int idReview;
 	private int rate;
-	private int idPassenger;
+	private Passenger passenger;
 	private String review;
-	private int idTravel;
+	private Travel travel;
 	
 	//Constructor
 	public Review() {
@@ -23,12 +23,12 @@ public class Review {
 		this.rate = rate;
 	}
 
-	public int getIdPassenger() {
-		return idPassenger;
+	public Passenger getPassenger() {
+		return passenger;
 	}
 
-	public void setIdPassenger(int idPassenger) {
-		this.idPassenger = idPassenger;
+	public void setPassenger(Passenger passenger) {
+		this.passenger = passenger;
 	}
 
 	public String getReview() {
@@ -39,12 +39,12 @@ public class Review {
 		this.review = review;
 	}
 
-	public int getIdTravel() {
-		return idTravel;
+	public Travel getTravel() {
+		return travel;
 	}
 
-	public void setIdTravel(int idTravel) {
-		this.idTravel = idTravel;
+	public void setTravel(Travel travel) {
+		this.travel = travel;
 	}
 
 	public int getIdReview() {
